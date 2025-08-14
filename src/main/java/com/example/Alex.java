@@ -6,9 +6,10 @@ import java.util.List;
 public class Alex extends Lion {
 
     List<String> alexFriends = Arrays.asList("Марти", "Глория", "Мелман");
+    private static final Feline feline = new Feline();
 
     public Alex() throws Exception {
-        super("Самец");
+        super("Самец", feline);
     }
 
     public List<String> getFriends() {
